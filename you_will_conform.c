@@ -1,4 +1,4 @@
-// Programming for the Puzzled by Srini Devadas
+// "Programming for the Puzzled" by Srini Devadas
 // Chapter 1 : You Will All Conform
 // generate the minimum number of commands.
 // conflate contiguous people with the same cap orientations by grouping them into an interval. After the intervals have been determined,
