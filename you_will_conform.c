@@ -23,11 +23,11 @@ int pleaseConform(char *caps)
 {
     // get the size of array
     size_t size = sizeof(caps_1) / sizeof(char);
-    printf("size : %d \n", size);
-    char latest = ' ';
-    int forward = 0;
-    int backward = 0; // orientation group counts.
-    for (int current = 0; current < size; ++current)
+    printf("cap length : %d \n", size);
+    char latest = *caps;
+    int forward = latest == 'F' ? 1 : 0;
+    int backward = forward ^ 1;
+    for (int current = 1; current < size; ++current)
     {
         if (latest != *(caps + current))
         {
