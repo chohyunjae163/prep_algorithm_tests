@@ -6,7 +6,7 @@
 defmodule Solution do
   @spec permute(nums :: [integer]) :: [[integer]]
   def permute(nums), do: do_permute(nums)
-  defp do_permute([a]), do: [a] #shortcut
+  defp do_permute([a]), do: [[a]] #shortcut
   defp do_permute([a,b]), do: [[a,b],[b,a]] #shortcut
   defp do_permute([a,b]), do: [[a,b,c],[a,c,b],[b,a,c],[b,c,a],[c,a,b],[c,b,a]] #shortcut
   defp do_permute(nums) do
